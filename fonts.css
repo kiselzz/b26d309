@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "PT Root UI";
+  src: url("../Myfirst/fonts/pt-root-ui_bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: url("../Myfirst/fonts/pt-root-ui_medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: url("../Myfirst/fonts/pt-root-ui_regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: url("../Myfirst/fonts/pt-root-ui_light.woff2") format("woff2");
+  font-weight: 300;
+}

@@ -1,0 +1,266 @@
+/* общие стили */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "PT Root UI", Arial, Helvetica, sans-serif;
+}
+/* стили для для статьи */
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+blockquote,
+hr {
+  margin: 0 auto;
+  width: 700px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+p,
+ol,
+ul,
+blockquote {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+h1 {
+  font-size: 38px;
+  margin: 30px auto;
+}
+h1 + p,
+h1 + p a {
+  color: #666;
+  transition: color 0.6s ease;
+}
+h1 + p a:hover {
+  color: blue;
+}
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+  margin: 40px auto;
+}
+h3 {
+  font-size: 28px;
+  line-height: 32px;
+  margin: 30px auto;
+}
+h4 {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 20px auto;
+}
+h5 {
+  font-style: italic;
+  font-size: 21px;
+  line-height: 28px;
+  margin: 20px auto;
+}
+hr {
+  width: 1024px;
+}
+img {
+  width: 1024px;
+  margin: 30px auto;
+  display: block;
+}
+ol {
+  padding-left: 30px;
+  list-style-type: decimal;
+}
+ul {
+  padding-left: 30px;
+  list-style-type: square;
+}
+li {
+  margin: 8px 0;
+}
+blockquote {
+  font-style: italic;
+  position: relative;
+}
+blockquote::before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 100%;
+  background-color: #000;
+  top: 0;
+  left: -17px;
+}
+
+/* стили для бокового меню */
+.sidebar {
+  width: 280px;
+  margin-top: 58px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  transition: opacity 0.6s ease;
+}
+.sidebar:hover {
+  opacity: 1;
+}
+.sidebar ul {
+  width: 100%;
+  margin: 0;
+}
+.sidebar li {
+  list-style-type: none;
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.4;
+}
+.sidebar a {
+  color: #000;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* стили для верхнего меню */
+.menubar {
+  width: 80%;
+  margin: 10px auto;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 22px;
+}
+.menubar a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+.menubar a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
+стили для about.html */ .about-page::before {
+  content: "";
+  width: 1440px;
+  height: 3120px;
+  background-image: url("../images/1440.png");
+  position: absolute;
+  opacity: 0.2;
+}
+.about h2,
+.about p,
+.about img {
+  margin: 0;
+  width: 100%;
+}
+.about h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+}
+.about p {
+  margin-top: 30px;
+  font-size: 24px;
+  line-height: 1.5;
+}
+.section-1 div,
+.section-2 div,
+.section-3 div {
+  width: 50%;
+  overflow-x: hidden;
+}
+.section-1 {
+  margin-top: 170px;
+  display: flex;
+}
+.section-1 div:nth-of-type(1),
+.section-3 div:nth-of-type(1) {
+  padding-left: 120px;
+  padding-right: 80px;
+}
+.section-3 div:nth-of-type(1) {
+  padding-right: 0;
+}
+.section-1 img {
+  width: 1090px;
+  margin-left: 50px;
+}
+.section-2 {
+  display: flex;
+  margin-top: 110px;
+}
+.section-2 img {
+  width: 650px;
+  margin-left: 78px;
+}
+.section-2 div:nth-of-type(2) {
+  /* padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 70px; */
+  padding: 50px 70px 0 40px;
+}
+.section-3 {
+  display: flex;
+  margin-top: 190px;
+}
+.section-3 img {
+  width: 1050px;
+  margin-left: 40px;
+  margin-top: 10px;
+  border-left: 1px solid #d7d7d7;
+  border-radius: 6px;
+  gap: 40px;
+}
+.section-4 {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.section-4 div:nth-of-type(1) {
+  width: 800px;
+}
+.section-4 h2,
+.section-4 p {
+  text-align: center;
+}
+.about-link {
+  text-decoration: none;
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  padding: 16px 36px;
+  transition: all 0.6s ease-out;
+}
+.light {
+  margin-right: 20px;
+  color: #888;
+}
+.light:hover {
+  color: black;
+  border: 1px solid #000;
+}
+.dark {
+  padding: 16px 40px;
+  border: 1px solid #000;
+  color: #fff;
+  background-color: #000;
+}
+.dark:hover {
+  border: 1px solid cornflowerblue;
+  background-color: cornflowerblue;
+}
